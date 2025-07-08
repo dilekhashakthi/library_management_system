@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpFormController">
+   <children>
+      <Rectangle fill="#cf9fff" height="600.0" smooth="false" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="268.0" />
+      <Rectangle fill="#fffcfb" height="600.0" layoutX="268.0" smooth="false" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="634.0" />
+      <Label layoutX="510.0" layoutY="110.0" text="Sign up">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="489.0" layoutY="215.0" prefHeight="26.0" prefWidth="195.0" promptText="Username" />
+      <PasswordField fx:id="txtpassword" alignment="CENTER" layoutX="489.0" layoutY="314.0" prefHeight="26.0" prefWidth="195.0" promptText="Password" />
+      <JFXButton layoutX="545.0" layoutY="430.0" onAction="#btnSignUoOnAction" prefHeight="26.0" prefWidth="84.0" text="Sign up">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="txtConfirmPassword" alignment="CENTER" layoutX="489.0" layoutY="362.0" prefHeight="26.0" prefWidth="195.0" promptText="Confirm Password" />
+      <Label layoutX="13.0" layoutY="247.0" text="Create New Account">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="283.0" prefHeight="22.0" prefWidth="175.0" text="Let's start with begining...">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="489.0" layoutY="265.0" prefHeight="26.0" prefWidth="195.0" promptText="Email" />
+   </children>
+</AnchorPane>

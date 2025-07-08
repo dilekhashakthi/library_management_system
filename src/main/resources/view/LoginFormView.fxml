@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Rectangle fill="#cf9fff" height="600.0" smooth="false" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="268.0" />
+      <Label contentDisplay="CENTER" layoutX="24.0" layoutY="230.0" prefHeight="46.0" prefWidth="219.0" text="Welcome back!">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="286.0" prefHeight="19.0" prefWidth="219.0" text="You can Sign in to access with">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="309.0" prefHeight="15.0" prefWidth="195.0" text="your existing account.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Rectangle fill="#fffcfb" height="600.0" layoutX="268.0" smooth="false" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="630.0" />
+      <Label layoutX="534.0" layoutY="136.0" text="Login">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="495.0" layoutY="239.0" prefHeight="26.0" prefWidth="195.0" promptText="Email" />
+      <PasswordField fx:id="txtpassword" alignment="CENTER" layoutX="495.0" layoutY="289.0" prefHeight="26.0" prefWidth="195.0" promptText="Password" />
+      <JFXButton layoutX="551.0" layoutY="351.0" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="84.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Hyperlink layoutX="504.0" layoutY="405.0" onAction="#linkOnAction" text="Are you new user? Register now" />
+   </children>
+</AnchorPane>

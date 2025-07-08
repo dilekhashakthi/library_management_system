@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Dashboard">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3d365c" height="600.0" stroke="#cf9fff" strokeType="INSIDE" width="200.0" />
+      <JFXButton layoutX="6.0" layoutY="150.0" onAction="#btnBookManagmentonAction" prefHeight="34.0" prefWidth="150.0" text="Book Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="6.0" layoutY="250.0" onAction="#btnBorrowingRecodesOnAction" prefHeight="34.0" prefWidth="188.0" text="Book Borrowing Records" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="6.0" layoutY="350.0" onAction="#btnusermanagementOnAction" prefHeight="34.0" prefWidth="150.0" text="User Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="loadFormContent" layoutX="199.0" prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffcfb" height="600.0" stroke="#fffcfb" strokeType="INSIDE" width="700.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

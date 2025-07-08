@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookManagementFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf9fff" height="70.0" layoutY="-1.0" stroke="#cf9fff" strokeType="INSIDE" width="700.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffcfb" height="530.0" layoutY="68.0" stroke="#fffcfb" strokeType="INSIDE" width="700.0" />
+      <TextField fx:id="txtbookID" alignment="CENTER" layoutX="36.0" layoutY="102.0" promptText="BookID" />
+      <TextField fx:id="txtISBN" alignment="CENTER" layoutX="273.0" layoutY="102.0" promptText="ISBN" />
+      <TextField fx:id="txtTitel" alignment="CENTER" layoutX="514.0" layoutY="102.0" promptText="Titel" />
+      <TextField fx:id="txtAuthor" alignment="CENTER" layoutX="36.0" layoutY="155.0" promptText="Author" />
+      <TextField fx:id="txtGenre" alignment="CENTER" layoutX="273.0" layoutY="155.0" promptText="Genre" />
+      <JFXButton layoutX="114.0" layoutY="205.0" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="70.0" text="Add">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="248.0" layoutY="205.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="70.0" text="Update">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="385.0" layoutY="205.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="70.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="520.0" layoutY="205.0" onAction="#btnSearchOnAction" prefHeight="30.0" prefWidth="70.0" text="Search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblBookTable" fixedCellSize="0.0" layoutX="7.0" layoutY="246.0" prefHeight="295.0" prefWidth="686.0" stylesheets="@../css/tablecss.css">
+        <columns>
+          <TableColumn fx:id="colbookID" prefWidth="62.39999198913574" text="BookID" />
+          <TableColumn fx:id="colISBN" prefWidth="120.80001831054688" text="ISBN" />
+            <TableColumn fx:id="colTitel" prefWidth="113.60005187988281" text="Titel" />
+            <TableColumn fx:id="colAuthor" prefWidth="134.39996337890625" text="Author" />
+            <TableColumn fx:id="colGenre" prefWidth="100.79998779296875" text="Genre" />
+            <TableColumn fx:id="colAvailability" prefWidth="138.39996337890625" text="Availability" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="315.0" layoutY="552.0" onAction="#btnReloadOnAction" prefHeight="30.0" prefWidth="70.0" text="Reload">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="168.0" layoutY="10.0" text="Book Management Form">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="txtAvailability" layoutX="512.0" layoutY="155.0" prefHeight="26.0" prefWidth="150.0" promptText="Availability" />
+   </children>
+</AnchorPane>
