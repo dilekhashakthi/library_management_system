@@ -14,47 +14,36 @@
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf9fff" height="70.0" stroke="#cf9fff" strokeType="INSIDE" width="700.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffcfb" height="530.0" layoutY="69.0" stroke="#fffcfb" strokeType="INSIDE" width="700.0" />
-      <TextField fx:id="txtID" alignment="CENTER" layoutX="139.0" layoutY="102.0" promptText="ID" />
-      <TextField fx:id="txtName" alignment="CENTER" layoutX="415.0" layoutY="102.0" promptText="Name" />
-      <TextField fx:id="txtContactInformation" alignment="CENTER" layoutX="139.0" layoutY="153.0" promptText="Contact Information" />
-      <JFXButton layoutX="127.0" layoutY="205.0" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="70.0" text="Add">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
+      <Label layoutX="176.0" layoutY="11.0" text="User Management Form">
+         <font><Font name="System Bold" size="32.0" /></font>
+      </Label>
+      <TextField fx:id="txtID" alignment="CENTER" layoutX="36.0" layoutY="102.0" promptText="ID" />
+      <TextField fx:id="txtName" alignment="CENTER" layoutX="275.0" layoutY="102.0" promptText="Name" />
+      <TextField fx:id="txtContactInformation" alignment="CENTER" layoutX="36.0" layoutY="153.0" promptText="Contact Information" />
+      <DatePicker fx:id="txtDatepicker" layoutX="275.0" layoutY="152.0" prefHeight="26.0" prefWidth="150.0" promptText="Membership Date" />
+      <TextField fx:id="txtSearch" alignment="CENTER" layoutX="512.0" layoutY="102.0" prefWidth="150.0" promptText="Search by Name/ID" />
+      <JFXButton layoutX="87.0" layoutY="205.0" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="70.0" text="Add">
+         <font><Font name="System Bold" size="13.0" /></font>
       </JFXButton>
-      <JFXButton layoutX="261.0" layoutY="205.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="70.0" text="Update">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
+      <JFXButton layoutX="210.0" layoutY="205.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="70.0" text="Update">
+         <font><Font name="System Bold" size="13.0" /></font>
       </JFXButton>
-      <JFXButton layoutX="398.0" layoutY="205.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="70.0" text="Delete">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
+      <JFXButton layoutX="333.0" layoutY="205.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="70.0" text="Delete">
+         <font><Font name="System Bold" size="13.0" /></font>
       </JFXButton>
-      <JFXButton layoutX="533.0" layoutY="205.0" onAction="#btnSearchOnAction" prefHeight="30.0" prefWidth="70.0" text="Search">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
+      <JFXButton layoutX="456.0" layoutY="205.0" onAction="#btnSearchOnAction" prefHeight="30.0" prefWidth="70.0" text="Search">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </JFXButton>
+      <JFXButton layoutX="313.0" layoutY="557.0" onAction="#btnReloadOnAction" prefHeight="30.0" prefWidth="70.0" text="Reload">
+         <font><Font name="System Bold" size="13.0" /></font>
       </JFXButton>
       <TableView fx:id="tblUserTable" layoutX="7.0" layoutY="246.0" prefHeight="295.0" prefWidth="686.0" stylesheets="@../css/tablecss.css">
          <columns>
-            <TableColumn fx:id="colID" prefWidth="100.80004501342773" text="ID" />
-            <TableColumn fx:id="colName" prefWidth="201.59999084472656" text="Name" />
-            <TableColumn fx:id="colContactInformation" prefWidth="199.99993896484375" text="Contact Information" />
-            <TableColumn fx:id="colMembershipDate" prefWidth="164.79998779296875" text="Membership Date" />
+            <TableColumn fx:id="colID" prefWidth="100.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="200.0" text="Name" />
+            <TableColumn fx:id="colContactInformation" prefWidth="200.0" text="Contact Information" />
+            <TableColumn fx:id="colMembershipDate" prefWidth="165.0" text="Membership Date" />
          </columns>
       </TableView>
-      <JFXButton layoutX="313.0" layoutY="557.0" onAction="#btnReloadOnAction" prefHeight="30.0" prefWidth="70.0" text="Reload">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </JFXButton>
-      <Label layoutX="176.0" layoutY="11.0" text="User Management Form">
-         <font>
-            <Font name="System Bold" size="32.0" />
-         </font>
-      </Label>
-      <DatePicker fx:id="txtDatepicker" layoutX="415.0" layoutY="152.0" prefHeight="26.0" prefWidth="150.0" promptText="Date Picker" />
    </children>
 </AnchorPane>

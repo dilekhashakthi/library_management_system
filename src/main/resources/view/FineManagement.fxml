@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FineManagementFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf9fff" height="70.0" layoutY="-1.0" stroke="#cf9fff" strokeType="INSIDE" width="700.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffcfb" height="530.0" layoutY="68.0" stroke="#fffcfb" strokeType="INSIDE" width="700.0" />
+      <Label layoutX="180.0" layoutY="10.0" text="Fine Management Form">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFineID" alignment="CENTER" layoutX="36.0" layoutY="99.0" promptText="Fine ID" />
+      <TextField fx:id="txtRecordID" alignment="CENTER" layoutX="275.0" layoutY="99.0" promptText="Record ID" />
+      <TextField fx:id="txtUserID" alignment="CENTER" layoutX="512.0" layoutY="99.0" promptText="User ID" />
+      <TextField fx:id="txtFineAmount" alignment="CENTER" layoutX="36.0" layoutY="152.0" promptText="Fine Amount (Rs.)" />
+      <TextField fx:id="txtStatus" alignment="CENTER" layoutX="275.0" layoutY="152.0" promptText="Status" editable="false" />
+      <JFXButton layoutX="36.0" layoutY="205.0" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="80.0" text="Add">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </JFXButton>
+      <JFXButton layoutX="140.0" layoutY="205.0" onAction="#btnSearchOnAction" prefHeight="30.0" prefWidth="80.0" text="Search">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </JFXButton>
+      <JFXButton layoutX="244.0" layoutY="205.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="80.0" text="Delete">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </JFXButton>
+      <JFXButton layoutX="348.0" layoutY="205.0" onAction="#btnPayFineOnAction" prefHeight="30.0" prefWidth="100.0" text="Pay Fine">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </JFXButton>
+      <JFXButton layoutX="465.0" layoutY="205.0" onAction="#btnShowUnpaidOnAction" prefHeight="30.0" prefWidth="105.0" text="Show Unpaid">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </JFXButton>
+      <TableView fx:id="tblFineTable" layoutX="7.0" layoutY="246.0" prefHeight="295.0" prefWidth="686.0" stylesheets="@../css/tablecss.css">
+         <columns>
+            <TableColumn fx:id="colFineID" prefWidth="90.0" text="Fine ID" />
+            <TableColumn fx:id="colRecordID" prefWidth="100.0" text="Record ID" />
+            <TableColumn fx:id="colUserID" prefWidth="100.0" text="User ID" />
+            <TableColumn fx:id="colFineAmount" prefWidth="110.0" text="Fine Amount" />
+            <TableColumn fx:id="colStatus" prefWidth="100.0" text="Status" />
+            <TableColumn fx:id="colPaidDate" prefWidth="186.0" text="Paid Date" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="315.0" layoutY="553.0" onAction="#btnReloadOnAction" prefHeight="30.0" prefWidth="70.0" text="Reload">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </JFXButton>
+   </children>
+</AnchorPane>
